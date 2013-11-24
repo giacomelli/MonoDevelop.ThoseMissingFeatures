@@ -1,0 +1,40 @@
+<Addin namespace   = "MonoDevelop"  
+       id          = "ThoseMissingFeatures"  
+       name        = "Those Missing Features"  
+       author      = "Diego Giacomelli"  
+       copyright   = "MIT/X11"  
+       url         = "http://github.com/giacomelli/MonoDevelop.ThoseMissingFeatures"  
+       description = "Those missing features we would like to see in MonoDevelop."  
+       category    = "IDE Extensions"  
+       version     = "0.1"> 
+       
+	<Dependencies>  
+      	<Addin id="::MonoDevelop.Ide" version="4.0"/> 
+  	</Dependencies>  
+
+  	<!--- Transform All Templates config -->
+  	<Extension path = "/MonoDevelop/Ide/Commands/Project"> 
+  		<Command 
+  	  		id = "MonoDevelop.ThoseMissingFeatures.Command.TransformAllTemplates"  
+     	    _label = "Transform all templates"  
+         	_description = "Transform all T4 templates" 
+         	defaultHandler = "MonoDevelop.ThoseMissingFeatures.Commands.TransformAllTemplatesHandler"/>  
+	</Extension>  
+
+	<Extension path = "/MonoDevelop/Ide/MainMenu/Project">
+		<CommandItem 
+			id="MonoDevelop.ThoseMissingFeatures.Command.TransformAllTemplates" 
+			insertafter = "MonoDevelop.Ide.Commands.ProjectCommands.AddReference"
+            insertbefore = "ExportSeparator" /> 
+	</Extension>
+
+	<Extension path = "/MonoDevelop/Ide/ContextMenu/ProjectPad">
+                <Condition id="ItemType" value="Project">
+                        <CommandItem
+                                id = "MonoDevelop.ThoseMissingFeatures.Command.TransformAllTemplates"
+                                insertafter = "MonoDevelop.Ide.Commands.ProjectCommands.AddReference"
+                                insertbefore = "AddSectionEnd" />
+                </Condition>
+        </Extension>
+
+</Addin> 
