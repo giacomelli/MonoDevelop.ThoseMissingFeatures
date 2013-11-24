@@ -26,6 +26,7 @@ Addin to add those missing features we would like to see in MonoDevelop.
 --------
 # Roadmap
 - Publish the addin has described here: [http://monodevelop.com/Developers/Articles/Publishing_an_Addin](http://monodevelop.com/Developers/Articles/Publishing_an_Addin)
+- Configure Travis-ci
 - Test on Windows and Linux
 
 --------
