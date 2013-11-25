@@ -1,0 +1,3 @@
+{{0.1, 2013-11-24}}
+
+Transform All Templates command added.
