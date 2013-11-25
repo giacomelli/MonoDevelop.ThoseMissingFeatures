@@ -5,9 +5,9 @@
        copyright   = "MIT/X11"  
        url         = "http://github.com/giacomelli/MonoDevelop.ThoseMissingFeatures"  
        description = "Those missing features we would like to see in MonoDevelop."  
-       category    = "IDE Extensions"  
+       category    = "IDE extensions"  
        version     = "0.1"> 
-       
+     
 	<Dependencies>  
       	<Addin id="::MonoDevelop.Ide" version="4.0"/> 
   	</Dependencies>  
@@ -29,12 +29,12 @@
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ContextMenu/ProjectPad">
-                <Condition id="ItemType" value="Project">
-                        <CommandItem
-                                id = "MonoDevelop.ThoseMissingFeatures.Command.TransformAllTemplates"
-                                insertafter = "MonoDevelop.Ide.Commands.ProjectCommands.AddReference"
-                                insertbefore = "AddSectionEnd" />
-                </Condition>
-        </Extension>
+        <Condition id="ItemType" value="Project">
+                <CommandItem
+                        id = "MonoDevelop.ThoseMissingFeatures.Command.TransformAllTemplates"
+                        insertafter = "MonoDevelop.Ide.Commands.ProjectCommands.AddReference"
+                        insertbefore = "AddSectionEnd" />
+        </Condition>
+	</Extension>
 
 </Addin> 
