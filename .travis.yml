@@ -1,0 +1,8 @@
+language: c
+ 
+install:
+  - sudo apt-get install mono-devel mono-gmcs
+  - mozroots --import --sync
+ 
+script:
+  - xbuild ./src/MonoDevelop.ThoseMissingFeatures.sln
