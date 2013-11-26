@@ -31,7 +31,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using Mono.TextEditor; 
+using Mono.TextEditor;
 using MonoDevelop.Components.Commands;
 using MonoDevelop.Core;
 using MonoDevelop.Core.Assemblies;
@@ -54,13 +54,13 @@ namespace MonoDevelop.ThoseMissingFeatures.Commands
 			var statusBar = IdeApp.Workbench.StatusBar;
 			var templates = GetCurrentProjectTemplates ();
 		
-			statusBar.ShowMessage("Transforming all templates...");
+			statusBar.ShowMessage ("Transforming all templates...");
 
 			foreach (var t in templates) {
 				CustomToolService.Update (t, true);
 			}
 
-			statusBar.ShowMessage(templates.Count + " templates transformed.");
+			statusBar.ShowMessage (templates.Count + " templates transformed.");
 		}
 
 		/// <summary>
@@ -74,12 +74,9 @@ namespace MonoDevelop.ThoseMissingFeatures.Commands
 			if (info.Visible) {
 				var templatesCount = GetCurrentProjectTemplates ().Count;
 
-				if(templatesCount == 0)
-				{
+				if (templatesCount == 0) {
 					info.Visible = false;
-				}
-				else 
-				{
+				} else {
 					info.Text = String.Format (CultureInfo.InvariantCulture, "Tranform all templates ({0})", templatesCount);
 				}
 			}
@@ -89,7 +86,7 @@ namespace MonoDevelop.ThoseMissingFeatures.Commands
 		/// Gets all templates.
 		/// </summary>
 		/// <returns>The all templates.</returns>
-		private IList<ProjectFile> GetCurrentProjectTemplates()
+		private IList<ProjectFile> GetCurrentProjectTemplates ()
 		{
 			IList<ProjectFile> templates;
 
@@ -97,8 +94,7 @@ namespace MonoDevelop.ThoseMissingFeatures.Commands
 
 			if (project == null) {
 				templates = new List<ProjectFile> ();
-			}
-			else {
+			} else {
 				templates = project.Files
 				.Where
 					(

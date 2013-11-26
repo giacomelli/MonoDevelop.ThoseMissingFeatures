@@ -3,7 +3,7 @@ MonoDevelop.ThoseMissingFeatures
 
 [![Build Status](https://travis-ci.org/giacomelli/MonoDevelop.ThoseMissingFeatures.png?branch=master)](https://travis-ci.org/giacomelli/MonoDevelop.ThoseMissingFeatures)
 
-Addin to add those missing features we would like to see in MonoDevelop.
+Add-in to add those missing features we would like to see in MonoDevelop.
 
 --------
 
@@ -15,17 +15,23 @@ Addin to add those missing features we would like to see in MonoDevelop.
 --------
 # Requirements
  - MonoDevelop 4.0+ or Xamarin Studio 4.0+
- - Mono 2.10.9 or above
+ - Mono 2.10.9+
  
+ 
+# Installation
+The add-in is published on Community Add-in Repository for the MonoDevelop ([http://addins.monodevelop.com](http://addins.monodevelop.com)).
+
+In MonoDevelop, enter in "Add-in manager", search for "Those Missing Features" in beta channel and install the add-in.
+
  
 --------
 # Environments Tested
-- OS X 10.7.5 - Mono 2.10.12
+- OS X 10.7.5
+- Windows 7 
 
 
 --------
 # Roadmap
-- Publish the addin has described here: [http://monodevelop.com/Developers/Articles/Publishing_an_Addin](http://monodevelop.com/Developers/Articles/Publishing_an_Addin)
 - Configure Travis-ci
 - Test on Windows and Linux
 
