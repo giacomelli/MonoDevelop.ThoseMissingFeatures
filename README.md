@@ -1,8 +1,6 @@
 MonoDevelop.ThoseMissingFeatures
 ================================
 
-[![Build Status](https://travis-ci.org/giacomelli/MonoDevelop.ThoseMissingFeatures.png?branch=master)](https://travis-ci.org/giacomelli/MonoDevelop.ThoseMissingFeatures)
-
 Add-in to add those missing features we would like to see in MonoDevelop.
 
 --------
