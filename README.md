@@ -32,6 +32,8 @@ In MonoDevelop, enter in "Add-in manager", search for "Those Missing Features" i
 # Roadmap
 - Configure Travis-ci
 - Test on Windows and Linux
+- New features
+ - Enabled NuGet package restore (for new added projects too) 
 
 --------
 # How to improve it?
